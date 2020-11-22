@@ -1,0 +1,89 @@
+.rodicules-area {
+    background: $black;
+    height: 475px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @media #{$lg} { 
+      background: #000;
+      height: 450px; 
+    } 
+    @media #{$md} { 
+      height: 690px;  
+    }
+    @media #{$xs} { 
+      height: 690px; 
+    }  
+    .rodicules-img{
+       img {
+        position: absolute;
+        left: 0;
+        bottom: -98px;
+        height: 553px;
+        width: 485px;
+        z-index: 2;
+        @media #{$lg} {
+          bottom: -46px;
+          height: 500px;
+        }
+        @media #{$md}{ 
+          position: relative;
+          left: 50%;
+          bottom: 0;
+          height: 370px;
+          z-index: 999;
+          transform: translate(-50%);
+          margin-bottom: 30px;
+          margin-top: -100px;
+          width: auto;
+        }
+        @media #{$sm}{   
+          height: 360px !important; 
+        } 
+        @media #{$xs}{  
+            position: relative;
+            left: 50%;
+            bottom: 0;
+            height: 272px;
+            z-index: 2;
+            transform: translate(-50%);
+            margin-bottom: 30px;
+            margin-top: -115px; 
+            width: auto;
+        }
+      }
+    } 
+      .rodicules-wrepper{
+        @media #{$xs} {
+          padding-left: 20px;
+        } 
+                h2.title-text {
+                  @media #{$lg} {
+                    font-size: 32px;
+                    margin-bottom: 15px;
+                  }
+                  @media #{$xs} {
+                    font-size: 25px;
+                  } 
+              }
+            .title-text:after {
+                position: absolute;
+                content: "";
+                border-right: 15px solid $theme-color;
+                border-bottom: 15px solid transparent;
+                left: -30px;
+                top: 15px;
+                transform: rotate(45deg);
+            } 
+          p {
+            color: $white;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            @media #{$xs} {
+              font-size: 13px;
+            }
+          } 
+
+      }
+  }

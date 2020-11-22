@@ -1,0 +1,170 @@
+
+.header-area {
+	background:$black;
+	@media #{$xs} {
+		display: none;
+	}
+	 .header-top {
+		background: $white;
+		height: 125px;
+		display: flex;
+		align-items: center; 
+		@media #{$xs} {
+			background: #fff;
+			height: 200px;
+			display: flex;
+			align-items: center;
+		}
+		.logo-area {
+			@media #{$xs}{
+				text-align: left;
+			  }
+		  h1{
+			margin: 0;
+			a {
+				color: $black;
+				font-size: 52px;
+				@media #{$md}{
+				  font-size: 44px;
+				  }
+			  }
+		  }
+		} 
+		.top-contact-info {
+			margin-top: 25px;
+			@media #{$md}{
+				margin-top: 15px;
+			}
+			  ul li {
+				display: inline-block;
+				a {
+					color: $black;
+					font-size: 20px;
+					font-weight: 100;
+					margin-left: 60px;
+				    span {
+						color: $theme-color;
+						margin-right: 5px;
+						font-size: 22px; 
+					  } 
+					  img {
+						width: 26px;
+						margin-right: 5px;
+					  }
+					  @media #{$md}{
+						color: #333;
+						font-size: 18px;
+						font-weight: 100;
+						margin-left: 30px;
+					  }
+					  @media #{$sm}{
+						color: #333;
+						font-size: 20px;
+						font-weight: 100;
+						margin-left: 48px;
+					  }
+					  @media #{$xs}{
+						color: #333;
+						font-size: 20px;
+						font-weight: 100;
+						margin-left: 48px;
+					  }
+				  }
+				  a.call-icon span {
+					background: $theme-color;
+					padding: 4px 9px;
+					border-radius: 50%;
+					font-size: 18px;
+					color: $white;
+					position: relative;
+				  }
+			  }
+		  }  
+		  @media #{$sm} {
+			background: #fff;
+			height: 200px;
+			display: flex;
+			align-items: center;
+		  }
+	  }
+	  .header-bootom {
+		position: relative;
+		 .menu-area nav ul {
+			display: flex;
+			width: 100%;
+		  }
+		  li {
+			display: block;
+			width: 100%;
+			text-align: center;
+			a {
+				display: block;
+				max-width: 90%;
+				min-width: 90%;
+				text-transform: uppercase;
+				padding: 30px 0;
+				font-size: 22px;
+				font-family: 'Playfair Display', serif;
+				color: $white;
+				padding-top: 40px;
+				transition: .3s;
+				position: relative;
+				@media #{$md}{
+					display: block;
+					max-width: 100%;
+					min-width: 100%;
+					text-transform: uppercase;
+					padding: 20px 0;
+					font-size: 18px;
+					font-family: 'Playfair Display', serif;
+					color: #fff;
+					padding-top: 40px;
+					transition: .3s;
+					position: relative;
+				}
+			  }
+			  a:after {
+				  content: "";
+				  position: absolute;
+				  border-top: 12px solid $theme-color;
+				  border-right: 12px solid transparent;
+				  top: 9px;left: 50%;
+				  transform: translate(-50%)rotate(-136deg);
+				  transition: .3s;
+				  visibility: visible;
+				  opacity: 0;
+				}
+				a:hover:after {
+					top: 23px;
+					visibility: visible;
+					opacity: 1;
+				}
+				a.active-menu:after{
+					visibility: visible;
+					opacity: 1;
+					top: 23px;
+					
+					}	
+				a.booking-btn {
+					background: $theme-color;
+					margin-left: 25px;
+				  }
+		  }
+
+	  }  
+	  .header-bootom:after {
+		  content: "";
+		  position: absolute;
+		  width: 100%;
+		  height: 5px;
+		  background: $white;
+		  top: 10px;
+		  left: 0;
+		  z-index: 2;
+	  }
+ 
+  }
+// header-area css END
+@media #{$md}{
+
+}

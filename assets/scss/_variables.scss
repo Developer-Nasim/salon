@@ -1,0 +1,27 @@
+// Font Family
+$Playfair: 'Playfair Display', serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$roboto: 'Roboto', sans-serif; 
+
+// Colors ---------------
+$white: #ffffff;
+$black: #000; 
+$theme-color: #b28326;
+$body-text-color: #ccc;
+$border-color:#e5e5e5;
+$dot-color : #b2b2b2;
+$dot-color-hero : #867c78;
+$svg-color : #dc0acb;
+$rgba-color : rgba(0,0,0,.6);
+
+// Heading Color
+$heading-color: #000;
+
+
+// Responsive Variables
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 766px)';
+

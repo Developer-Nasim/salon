@@ -1,0 +1,175 @@
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900|Roboto+Condensed:300,400,700|Roboto:300,400,500,700,900&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;;
+	font-weight: normal;
+	font-style: normal;
+	color: $body-text-color;
+	font-size: 14px; }
+   
+  
+  .f-left {
+	float: left; }
+  
+  .f-right {
+	float: right; }
+  
+  .fix {
+	overflow: hidden; }
+  
+  a,
+  .button {
+	@include transition(.3s);}
+  
+  button {
+	cursor: pointer; }
+  
+  a:focus,
+  .button:focus {
+	text-decoration: none;
+	outline: none; }
+  
+  a:focus,
+  a:hover {
+	color: inherit;
+	text-decoration: none; }
+  
+  a,
+  button {
+	color: inherit;
+	outline: medium none; }
+  
+  button:focus, input:focus, input:focus, textarea, textarea:focus {
+	outline: 0; }
+  
+  .uppercase {
+	text-transform: uppercase; }
+  
+  .capitalize {
+	text-transform: capitalize; }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	font-family: $Playfair;
+	font-weight: normal;
+	color: $white;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal; }
+  
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+	color: inherit; }
+  
+  h1 {
+	font-size: 40px;
+	font-weight: 500; }
+  
+  h2 {
+	font-size: 35px; }
+  
+  h3 {
+	font-size: 28px; }
+  
+  h4 {
+	font-size: 22px; }
+  
+  h5 {
+	font-size: 18px; }
+  
+  h6 {
+	font-size: 16px; }
+  
+  ul {
+	margin: 0px;
+	padding: 0px; }
+  
+  li {
+	list-style: none; }
+	.title-text {
+		position: relative;
+	  }
+	  .title-text:after {
+		position: absolute;
+		content: "";
+		border-right: 25px solid $theme-color;
+		border-bottom: 25px solid transparent;
+		left: -35px;
+		top: 10px;
+		transform: rotate(45deg);
+	  }
+	  .theme-btn {
+		display: inline-block;
+		padding: 5px 30px;
+		text-transform: uppercase;
+		font-family: 'Playfair Display', serif;
+		font-size: 22px;
+		border: 2px solid $theme-color;
+		color: $white;
+		transition: .3s;
+		@media #{$lg} { 
+			padding: 5px 20px; 
+			font-size: 18px; 
+		  } 
+		  @media #{$xs} { 
+            padding: 2px 15px; 
+            font-size: 13px;
+		  }
+	  }
+	  
+	  .theme-btn:hover {
+		background: $theme-color;
+		color: $white;
+		border-color: $theme-color;
+	  }
+	  .siteBar{
+		display: none;
+	  }
+	  
+	  .responsive-header{
+		display: none !important;
+	  }
+	  p{
+		@media #{$sm}{
+			font-size: 15px !important;
+		}
+		@media #{$xs}{
+			font-size: 13px !important;
+		}
+	  }
+	  @media #{$xs}{
+		.title-text:after {
+            position: absolute;
+            content: "";
+            border-right: 15px solid #b28326;
+            border-bottom: 15px solid transparent;
+            left: -25px;
+            top: 10px;
+            transform: rotate(45deg);
+        }
+	  }
+	  .testimonial-area .clients-review .review-item {
+		margin-left: 18px;
+		position: relative;
+		outline: none;
+		border: none;
+	}
+	.hero-wrep .hero-area .hero-wreper {
+	border: none;
+	outline: none;
+}
+// others common css here :)
